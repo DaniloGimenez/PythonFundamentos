@@ -95,7 +95,7 @@ class Hangman:
 
 # Função para ler uma palavra de forma aleatória do banco de palavras
 def rand_word():
-        with open("palavras.txt", "rt") as f:
+        with open("hangman_words.txt", "rt") as f:
                 bank = f.readlines()
         return bank[random.randint(0,len(bank))].strip()
 
